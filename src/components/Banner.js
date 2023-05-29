@@ -13,7 +13,7 @@ export const Banner = () => {
 
     useEffect(() => {
         let ticker = setInterval(() => {
-            ticker();
+            tick();
         }, delta)
         return () => {clearInterval(ticker)}
     }, [text])
@@ -28,12 +28,14 @@ export const Banner = () => {
             setDelta(prevDelta => prevDelta /2)
         }
 
-        if(!Deleteing && updatedText === fullText){
+        if(!isDeleting && updatedText === fullText){
             setIsDeleting(true);
             setDelta(period);
-        } else if(isDeleting && updatedText === ''{
+        } else if(isDeleting && updatedText === ''){
             setIsDeleting(false);
-        })
+            setLoopNum(loopNum + 1);
+            setDelta(500);
+        }
     }
 
 
@@ -44,7 +46,7 @@ export const Banner = () => {
                 <Row className="align-items-cetre">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{`Hi I'm a webdecoded`} <span className="wrap">web developer</span></h1>
+                        <h1>{`Hi I'm a webdecoded`} <span className="wrap">{text}</span></h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                         <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25}/></button>
                     </Col>
