@@ -1,3 +1,4 @@
+import '../styles/NavBar.css';
 import { useEffect, useState } from "react";
 import {Navbar, Container, Nav} from "react-bootstrap";
 import logo from '../assets/img/logo.svg';

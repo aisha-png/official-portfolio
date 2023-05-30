@@ -1,5 +1,5 @@
+import '../styles/Skills.css';
 import { Col, Container, Row } from "react-bootstrap";
-// import { Controller } from "react-bootstrap-icons";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import meter1 from "../assets/img/meter1.svg";
@@ -10,7 +10,6 @@ import colorSharp from "../assets/img/color-sharp.png";
 export const Skills = () => {
     const responsive = {
         superLargeDesktop: {
-          // the naming can be any, depends on you.
           breakpoint: { max: 4000, min: 3000 },
           items: 5
         },
@@ -60,7 +59,6 @@ export const Skills = () => {
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-left" src={colorSharp} />
         </section>
     )
 }
