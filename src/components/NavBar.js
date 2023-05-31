@@ -5,6 +5,7 @@ import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/github-1.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
+import cv from '../assets/cv/Aisha-2023-CV.pdf'
 
 
 export const NavBar = () =>{
@@ -55,7 +56,7 @@ export const NavBar = () =>{
                             <a href="https://github.com/aisha-png"><img src={navIcon2} alt="" /></a>
                             <a href="#"><img src={navIcon3} alt="" /></a>
                         </div>
-                        <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+                        <button className="vvd" onClick={() => window.open(cv)}><span>Resume</span></button>
                     </span>
                 </Navbar.Collapse>
             </Container>

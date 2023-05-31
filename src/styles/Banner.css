@@ -98,6 +98,7 @@
   background: rgba(217, 217, 217, 0.1);
   transition: 0.3s ease-in-out;
 }
+/* return back to this css to fix lets connect button */
 .banner-text button span {
   z-index: 1;
 }
@@ -109,13 +110,13 @@
   background-color: #fff;
   left: 0;
   top: 0;
-  z-index: -1;
+  /* z-index: -1; */
   transition: 0.3s ease-in-out;
 }
-.banner-text button:hover {
+/* .banner-text button:hover {
   color: #121212;
   background-color: #ffffff56;
-}
+} */
 .banner-text button:hover::before {
   content: "";
   width: 100%;
