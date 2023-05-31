@@ -7,6 +7,7 @@
   padding-left: 7%;
   padding-right: 7%;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .banner {
@@ -67,9 +68,6 @@
   animation: updown 3s linear infinite;
 }
 
-/* .banner-title-fix {
-  
-} */
 
 .banner-text a::before {
   content: "";

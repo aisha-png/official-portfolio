@@ -1,5 +1,8 @@
 /*******NAVBAR CSS*******/
-
+/* cleared */
+#navbarr {
+    overflow: hidden;
+}
 nav.navbar {
     padding: 28px 0;
     position: fixed;

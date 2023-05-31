@@ -9,7 +9,7 @@ export const Banner = () => {
     const[isDeleting, setIsDeleting] = useState(false);
     const toRotate = ["Web Developer", "Back-end Developer", "Full Stack Developer"];
     const[text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() * 100); /* how fast one letter comes after the first one is typed*/
+    const [delta, setDelta] = useState(100 - Math.random() * 100); /* how fast one letter comes after the first one is typed*/
     const period = 2000;
 
     useEffect(() => {
@@ -48,7 +48,7 @@ export const Banner = () => {
                         <span className='banner-title-fix'>
                             <h4>{`Hello there 👋,`}</h4>
                             <h1 className='my-name'>{`I'm Aisha`}</h1>
-                            <h2><span className="wrap" dataPeriod="1000">{text}</span></h2>  
+                            {/* <h2><span className="wrap" dataPeriod="1000">{text}</span></h2>   */}
                         </span>
             
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>

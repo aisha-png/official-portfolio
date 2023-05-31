@@ -1,4 +1,5 @@
 /* SKILLS CSS */
+/* cleared */
 
 #skills {
     display: flex;
@@ -8,6 +9,7 @@
     padding-left: 7%;
     padding-right: 7%;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .skill {
