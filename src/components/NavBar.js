@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import {Navbar, Container, Nav} from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/github-1.svg';
+import navIcon2 from '../assets/img/github-outline.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import cv from '../assets/cv/Aisha-2023-CV.pdf'
 
@@ -34,7 +34,7 @@ export const NavBar = () =>{
 
     return (
         <section className='navbarr' id='navbarr'>
-        
+          
             <Navbar expand="lg" className={scrolled? "scrolled": ""}>
                 <Container>
                     <Navbar.Brand href="#home">
