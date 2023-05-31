@@ -1,4 +1,13 @@
 /* BANNER CSS */
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 17%;
+  padding-left: 7%;
+  padding-right: 7%;
+  min-height: 100vh;
+}
 
 .banner {
   margin-top: 0;
@@ -7,6 +16,9 @@
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.my-name {
+  color: #64ffda;
 }
 .banner .tagline {
   font-weight: 700;
@@ -53,6 +65,62 @@
 }
 .banner img {
   animation: updown 3s linear infinite;
+}
+
+/* .banner-title-fix {
+  
+} */
+
+.banner-text a::before {
+  content: "";
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+}
+
+.banner-text a:hover::before {
+  transform: scale(1);
+}
+
+.banner-text button {
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #64ffda;
+  padding: 18px 34px;
+  font-size: 18px;
+  margin-left: 18px;
+  position: relative;
+ 
+  background: rgba(217, 217, 217, 0.1);
+  transition: 0.3s ease-in-out;
+}
+.banner-text button span {
+  z-index: 1;
+}
+.banner-text button::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+.banner-text button:hover {
+  color: #121212;
+  background-color: #ffffff56;
+}
+.banner-text button:hover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 @keyframes updown {
     0% {
