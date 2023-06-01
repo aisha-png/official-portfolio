@@ -9,32 +9,32 @@ export const Projects = () => {
 
     const projects = (
        {
-        title: "Pokemon Project",
+        title: "Client side Project",
         description: "Frontend Development",
         imgUrl: projImg1,
        }, 
        {
-        title: "Banking API",
+        title: "Server Project",
         description: "Backend-project",
         imgUrl: projImg2,
        }, 
        {
-        title: "Animu",
+        title: "Capstone",
         description: "Full Stack Project",
         imgUrl: projImg3,
        },
        {
-        title: "Pokemon Project",
+        title: "Client Side Project",
         description: "Frontend Development",
         imgUrl: projImg1,
        }, 
        {
-        title: "Banking API",
+        title: "Server Project",
         description: "Backend-project",
         imgUrl: projImg2,
        }, 
        {
-        title: "Animu",
+        title: "Capstone",
         description: "Full Stack Project",
         imgUrl: projImg3,
        } 
@@ -52,7 +52,7 @@ export const Projects = () => {
                 </Row>
             </Container>
             <Container>
-                <Tabs defaultActiveKey="profile" id="justify-tab-example" className="mb-3" justify>
+                <Tabs defaultActiveKey="home" id="justify-tab-example" className="mb-3" justify>
                     <Tab eventKey="home" title="Home">
                         Tab content for Home
                     </Tab>
@@ -62,9 +62,9 @@ export const Projects = () => {
                     <Tab eventKey="longer-tab" title="Loooonger Tab">
                         Tab content for Loooonger Tab
                     </Tab>
-                    <Tab eventKey="contact" title="Contact" disabled>
+                    {/* <Tab eventKey="contact" title="Contact" disabled>
                         Tab content for Contact
-                    </Tab>
+                    </Tab> */}
                 </Tabs>
             </Container>
             
